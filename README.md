@@ -4,7 +4,7 @@ Any firm today, especially those in the financial sector, must prioritise a deep
 Each institution has its own KYC procedure, which occasionally may involve a third party and may result in increased maintenance expenses, delays, and redundancies. According to an economic survey, there is a significant amount of money lost in the form of opportunity expenses, maintenance costs, customer verification fees, and many more. The customer experience is negatively impacted by the lengthy KYC process currently in place. To augment the current KYC system, we have suggested a more advanced blockchain-based KYC solution.
 Also, it raises customer ownership and raises customer satisfaction. It not only shortens the time required and solves the issue of updating documents, but it also saves money on opportunity costs, aggregation costs, maintenance costs, and a host of other expenses that can have an impact on an organization's performance.
 
-# HOW TO RUN 
+# STEPS TO RUN 
 
 1. Download Node version 10.15.3 from given link below
 
