@@ -63,6 +63,9 @@ Also, it raises customer ownership and raises customer satisfaction. It not only
  9. An ethereum address will be generated this address will act as the admin to add the Banks Copy that Eth.Address and paste it in 
  js > contractDetails > var contractAddress = 'Your Eth. Address'; then "ctrl+s save" the file
  
- 10. Open the index.html file with live server and there your go!!!
+ 10. Open the index.html file with live server and there you go!!!
+
+
+ 11. Copy any of the available account and paste it in add bank portal in index.html with a name and login through it and perform various operations as in Add Kyc,     modify kyc, increase customer rating etc..
   
  
