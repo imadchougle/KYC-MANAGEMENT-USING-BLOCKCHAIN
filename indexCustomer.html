@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>Customer Portal</title>
+</head>
+<style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+    .button {
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {font-size: 18px;}
+
+.button2 {background-color: #9db5bd;
+    cursor: pointer;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center1 {
+  margin: 0;
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+    </style>
+<body>
+
+    <style>
+        body {
+          background-image: url('bc.jpg');
+        }
+        </style>
+
+        <header>
+            <h1 style="margin-bottom:2cm; color: #fc0000;" >Customer Portal</h1>
+
+        </header>
+
+                        <form>
+                            <h1>Log in</h1>
+                            <p>
+                                <label for="username" class="uname"> Username </label>
+                                <input id="username" name="username" required="required" type="text" />
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd"> Password </label>
+                                <input id="password" name="password" required="required" type="password"  />
+                            </p>
+                            <p class="signin button">
+                                <input type="submit" class = "center1 button2" value="Log In" onclick="return onClickLogin()" />
+                            </p>
+                        </form>
+
+                        <form>
+                            <h1> Sign up </h1>
+                            <p>
+                                <label for="usernamesignup" class="uname">Username   </label>
+                                <input id="usernamesignup" name="usernamesignup" required="required" type="text" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup" class="youpasswd">Password   </label>
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password"  />
+                            </p>
+                            <p>
+                                <label for="passwordsignup_confirm" class="youpasswd">Confirm Pass </label>
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"  />
+                            </p>
+                            <p class="signin button">
+                                <input type="submit" class = "center button2" value="Sign up" onclick="onClickSignUp()" />
+                            </p>
+                        </form>
+
+
+    <script type="text/javascript" src="./dist/web3.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.web3 !== "undefined" && typeof window.web3.currentProvider !== "undefined") {
+            var web3 = new Web3(window.web3.currentProvider);
+        } else {
+            var web3 = new Web3();
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript" src="./js/contractDetails.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./indexCustomer.js"></script>
+</body>
+
+</html>
