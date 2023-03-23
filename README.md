@@ -54,6 +54,9 @@ Also, it raises customer ownership and raises customer satisfaction. It not only
   testrpc
   ```
   
+  Open another terminal now, 
+  
+  
  8. Start the node 
  
    ```
