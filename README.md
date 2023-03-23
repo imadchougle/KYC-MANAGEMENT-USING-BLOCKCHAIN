@@ -50,7 +50,7 @@ Also, it raises customer ownership and raises customer satisfaction. It not only
    
  7. Now start the eth. env in vscode
  
-  '''
+  ```
   testrpc
   ```
   
