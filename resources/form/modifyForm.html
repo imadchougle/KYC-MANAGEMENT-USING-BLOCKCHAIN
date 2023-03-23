@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form1</title>
+
+    <!--encryption decryption scripts-->
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/jsbn.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/jsbn2.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/prng4.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/rng.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/rsa.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../../RSA_JS/rsa2.js"></script>
+
+</head>
+<style>
+    h1 {text-align: center;}
+    div {text-align: center;}
+    a {text-align: center;}
+
+    .center {
+margin: 0;
+position: absolute;
+top: 90%;
+left: 42%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.center1 {
+margin: 0;
+position: absolute;
+top: 90%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+.center2 {
+margin: 0;
+position: absolute;
+top: 90%;
+left: 60%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+.button {
+color: black;
+padding: 15px 32px;
+text-align: center;
+display: inline-block;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button3 {font-size: 18px;}
+
+.button2 {font-size: 18px;}
+
+.button4 {font-size: 18px;}
+
+.button2 {background-color: #d5f506;
+cursor: pointer;
+
+}
+.button3 {background-color: #10da2b;
+cursor: pointer;
+
+}
+
+.button4 {background-color: #f70f03;
+cursor: pointer;
+
+}
+
+
+</style>
+
+<body>
+
+    <h1>KYC MODIFY </h1>
+
+    <!-- JS source files -->
+    <script type="text/javascript" src="../../dist/web3.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.web3 !== "undefined" && typeof window.web3.currentProvider !== "undefined") {
+            var web3 = new Web3(window.web3.currentProvider);
+        } else {
+            var web3 = new Web3();
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript" src="../../js/contractDetails.js"></script>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Username</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Username" placeholder="Username" class="form-control" id="username" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="First Name" placeholder="First Name" class="form-control" id="first_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Middle Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Middle Name" placeholder="Middle Name" class="form-control" id="middle_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Last Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Last Name" placeholder="Last Name" class="form-control" id="last_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Occupation</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input name="Occupation" placeholder="Occupation" class="form-control" type="text" id="occupation">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Income Range</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Income Range" placeholder="Income Range" class="form-control" type="text" id="income_range">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Select Basic -->
+
+
+                    <!-- Text input-->
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Date Of Birth</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Date Of Birth" placeholder="Date Of Birth" class="form-control" type="text" id="DOB">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- radio checks -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Gender</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="male" id = "gender_m" /> Male</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="female" id = "gender_f" /> Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Full Residential Address</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input name="Full Residential Address" placeholder="Full Residential Address" class="form-control" type="text" id="address">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Text area -->
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Mobile Number</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Phone number 1" placeholder="Phone number 1" class="form-control" type="text" id="phone_1">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Pancard Number</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Phone number 2" placeholder="Phone number 2" class="form-control" type="text" id="phone_2">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Email</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="Email" placeholder="Email" class="form-control" type="text" id="email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Country of Residence</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Country of Residence" placeholder="Country of Residence" class="form-control" type="text" id="country_res">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Name -->
+
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="center1 button3" id="addKYCSend" onclick="return onClickModify()">MODIFY <span class="glyphicon glyphicon-send"></span></button>
+
+                            <button type="submit" class="center2 button4" id="deleteKYC" onclick="return onClickDelete()">Delete USER <span class="glyphicon glyphicon-send" ></span></button>
+                        </div>
+                    </div>
+
+                    <a href='../bankHomePage.html'>
+                        <button class="center  button2">
+                            BACK
+                        </button>
+                    </a>
+
+
+
+
+    </div>
+    <!-- jQuery -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+    <script language="JavaScript" type="text/javascript" src="./modifyForm.js"></script>
+
+</body>
+
+</html>

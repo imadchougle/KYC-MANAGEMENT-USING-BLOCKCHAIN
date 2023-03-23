@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KYC FORM</title>
+
+</head>
+<style>
+        h1 {text-align: center;}
+        div {text-align: center;}
+        a {text-align: center;}
+
+        .center {
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center1 {
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 55%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.button {
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3 {font-size: 18px;}
+
+.button2 {font-size: 18px;}
+
+.button2 {background-color: #d9331d;
+    cursor: pointer;
+
+}
+.button3 {background-color: #10da2b;
+    cursor: pointer;
+
+}
+
+
+</style>
+
+<body>
+
+    <!-- JS source files -->
+    <script type="text/javascript" src="../../dist/web3.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.web3 !== "undefined" && typeof window.web3.currentProvider !== "undefined") {
+            var web3 = new Web3(window.web3.currentProvider);
+        } else {
+            var web3 = new Web3();
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript" src="../../js/contractDetails.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./addForm.js"></script>
+
+<h1>KYC FORM </h1>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Username</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Username"  class="form-control" id="username" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">First Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="First Name"  class="form-control" id="first_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Middle Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Middle Name"  class="form-control" id="middle_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Last Name</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Last Name"  class="form-control" id="last_name" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Occupation</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input name="Occupation"  class="form-control" type="text" id="occupation">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Adhaar Number</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Income Range"  class="form-control" type="text" id="income_range">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Date Of Birth</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="Date Of Birth"  class="form-control" type="text" id="DOB">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Gender</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                                        <input type="radio" name="gender" value="male" id = "gender_m" /> Male
+                                                    </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                                            <input type="radio" name="gender" value="female" id =                                                                 "gender_f" /> Female
+                                                        </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Full Residential Address</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                <input name="Full Residential Address"  class="form-control" type="text" id="address">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">mobile number</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Phone number 1"  class="form-control" type="text" id="phone_1">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Pancard Number</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Phone number 2"  class="form-control" type="text" id="phone_2">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Email</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <input name="Email"  class="form-control" type="text" id="email">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Country of Residence</label>
+                        <div class="col-md-4 inputGroupContainer">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                                <input name="Country of Residence"  class="form-control" type="text" id="country_res">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="form-group">
+                        <p><input type="checkbox" required name="terms"> I accept the <u>Terms and Conditions</u></p>
+
+                    </div> -->
+
+                    <a href='../bankHomePage.html'>
+                        <button class="center  button2">
+                            BACK
+                        </button>
+                    </a>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="center1 button3" id="addKYCSend" onclick="return onClickAdd()">SUBMIT <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+
+
+    <!-- jQuery -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../../js/agency.min.js"></script>
+
+</body>
+
+</html>
