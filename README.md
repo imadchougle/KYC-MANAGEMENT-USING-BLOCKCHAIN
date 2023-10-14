@@ -69,6 +69,6 @@ Also, it raises customer ownership and raises customer satisfaction. It not only
  10. Open the index.html file with live server and there you go!!!
 
 
- 11. Copy any of the available account and paste it in add bank portal in index.html with a name and login through it and perform various operations as in Add Kyc,     modify kyc, increase customer rating etc..
+ 11. Copy any of the available account and paste it in add bank portal in index.html with a name and login through it and perform various operations as in Add Kyc,     modify kyc, increase customer rating etc.
   
  
